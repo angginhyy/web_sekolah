@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header{
+    background-color: #ffffff;
+    height: 80px;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0,.5);
+    z-index: 1000;
+}
+
+section nav .logo img{
+    width: 295px;
+    cursor: pointer;
+    margin-left: -100px;
+    margin-top: -0px;
+}
+
+section nav ul{
+    list-style: none;
+}
+
+
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: 0.1s;
+}
+
+section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: crimson;
+    display: block;
+    transition: 0.2s linear;
+}
+
+section nav ul li a:hover::after{
+    width: 100%;
+}
+
+section nav ul li a:hover{
+    color: crimson;
+}
+
+.content{
+    width: 90%;
+    margin: 20px auto;
+    height: 110vh;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.kata{
+    text-align: center;
+    margin-top: -600px;
+    color: white;
+    font-style: italic;
+}
+
+
+.thumbnail{
+    background-color:  whitesmoke ;
+    text-align: center;
+    padding: 10px;
+    width: 350px;
+    margin: 10px;
+    float: left;
+    color: white;
+    margin-top: 100px;
+    margin: 2px;
+    border-radius: 10px;
+    height: 300px;
+    margin-left: 70px;
+    color: #3e4d41;
+    transition: 0.3s;
+    margin-bottom: 60px;
+    transition: transform 0.3s ease-in-out;   
+}
+
+.thumbnail img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.thumbnail:hover{
+    transform: scale(1.1);
+}
+
+.footer{
+    text-align: center;
+    background-color: white;
+    margin-top: -50px;
+    padding: 20px;
+    color: gray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

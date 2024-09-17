@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header{
+    background-color: #ffffff;
+    height: 80px;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0,.5);
+    z-index: 1000;
+}
+
+section nav .logo img{
+    width: 295px;
+    cursor: pointer;
+    margin-left: -100px;
+    margin-top: 0px;
+}
+
+section nav ul{
+    list-style: none;
+}
+
+
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: 0.1s;
+}
+
+section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: crimson;
+    display: block;
+    transition: 0.2s linear;
+}
+
+section nav ul li a:hover::after{
+    width: 100%;
+}
+
+section nav ul li a:hover{
+    color: crimson;
+}
+
+
+
+.content{
+    display: flex;
+    margin-top: 70px;
+    height: 70vh;
+    text-align: center;
+    margin: 10px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: whitesmoke;
+    border: 1px solid #dfcece;
+    border-radius: 8px;
+    margin: 10px;
+    width: 250px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    height: 400px;
+    transition: 0.3;
+    transition: transform all 0.3s ease-in-out;
+}
+.card img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 20px;
+    margin: 10px;
+    
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+.card h3 {
+    margin: 15px 0;
+    color: #333;
+}
+.card p {
+    padding: 0 15px;
+    color: #666;
+    font-size: 14px;
+}
+.navbar ul li{
+    display: inline-block;
+    padding: 20px;
+    height: 20px;
+    padding-top: 1px;
+    
+}
+.navbar{
+    text-align: center;
+    background-color: rgb(10, 99, 10);
+    color: white;
+    height: 40px;
+    padding: 15px 20px; 
+    
+}
+
+.kata{
+    text-align: center;
+    font: bold;
+    margin-top: -600px;
+    font-style: italic;
+    color: white;
+}
+
+.footer{
+    text-align: center;
+    background-color: whitesmoke;
+    margin-top: -22px;
+    padding: 20px;
+    color: gray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 0px;
+}
